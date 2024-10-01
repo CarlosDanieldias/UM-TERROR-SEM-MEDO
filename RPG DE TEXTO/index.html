@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <title>Um terror sem medo</title>
+</head>
+<body>
+    <main>
+        <p class="AVISO">SE CASO VOCÊ ESCOLHER A OPÇÃO DA DIREITA CLIQUE NO ÁUDIO DA DIREITA, E SE FOR A OPÇÃO DA ESQUERDA CLIQUE NO ÁUDIO DA ESQUERDA!!!</p>
+        <audio class="rock" src="audiozinho.mp3" autoplay controls></audio>
+        <audio class="bola" src="piano.mp3" autoplay controls></audio>
+        <div class="passo ativo" id="passo-0">
+            <img src="padrão.png" alt="">
+            <p>Você acorda no chão de uma casa desconhecida e aparentemente estranha, com pequenos lapsos de memória você acaba tentando se lembrar do que aconteceu...</p>
+            <button class="btn-proximo" data-proximo="5">Você se lembra do ocorrido</button>
+            <button class="btn-proximo" data-proximo="1">Você não consegue se lembrar do que aconteceu.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="final ruim.png" alt="">
+            <p>Infelizmente você não consegue se lembrar do ocorrido e então o desespero começa a te consumir.</p>
+            <button class="btn-proximo" data-proximo="2">gritar por ajuda</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="final ruim2.png" alt="">
+            <p>Você escuta um estrondo enorme e ouve passos muito rápidos ficando cada vez mais altos.</p>
+            <button class="btn-proximo" data-proximo="3">Você acaba ficando muito assustado e, por conta do desespero, você começa a correr pela casa.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="final ruim3.png" alt="">
+            <p>Uma mulher com o rosto desfigurado aparece no meio da sala e faz você cair, batendo a cabeça em uma mesa e desmaiando logo em seguida.</p>
+            <button class="btn-proximo" data-proximo="4">Acordar</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="final ruim4.png" alt="">
+            <p>Você acorda no meio de um pentagrama desenhado no meio de uma sala com sangue fresco. E então a mulher aparece e começa a falar em línguas estranhas. Você está paralisado e não consegue se mover. A mulher então, com um galão de gasolina e um isqueiro resolve incendiá-lo. Infelizmente não tem muito o que fazer e você grita de dor e agoniza no meio daquele fogo infernal com uma tremenda aura maligna em volta daquele pentagrama.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="final bom.png" alt="">
+            <p>Por fim, você consegue se lembrar de que estava passeando na rua, até que de repente você levou uma pancada na cabeça e acabou desmaiando.</p>
+            <button class="btn-proximo" data-proximo="6">Tentar achar alguma forma de sair da casa</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="final bom2.png" alt="">
+            <p>Você então decide procurar por alguma forma de sair daquele lugar, e então você acaba ouvindo gritos que aparentam ser de uma mulher, ecoando dentro da casa...</p>
+            <button class="btn-proximo" data-proximo="7">esconder-se de baixo de uma mesa.</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="final bom3.png" alt="">
+            <p>Uma mulher com o rosto desfigurado, aparece no cômodo.</p>
+            <button class="btn-proximo" data-proximo="8">Sair de baixo da mesa e atacar a mulher por trás.</button>
+            <button class="btn-proximo" data-proximo="10">Esperar que a mulher saia da sala.</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="suplexbrabo.png" alt="">
+            <p>Você então decide sair de baixo da mesa e pegar a mulher por trás, realizando um suplex alemão matando ela instantâneamente.</p>
+            <button class="btn-proximo" data-proximo="9">Procurar por uma porta próxima.</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="VOADORA.png" alt="">
+            <p>Depois de matar a mulher, você decide encontrar alguma saída, por sorte você encontra uma porta que está trancada, e então sem hesitar você arromba a porta dando uma voadora de duas pernas nela. Consequentemente suas pernas ficam machucadas, porém você percebe que tem um hospital ali por perto e decide ir até ele para tratar de seus ferimentos.</p>
+            <button class="btn-proximo" data-proximo="13">CENA DO HOSPITAL</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="final bom4.png" alt="">
+            <p>Você resolve esperar que a mulher saia da sala. Isso acaba demorando mais que o normal, por sorte ela sai do cômodo e uma chave cai do bolso de sua roupa.</p>
+            <button class="btn-proximo" data-proximo="11">Sair de baixo da mesa e pegar a chave.</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="final bom5.png" alt="">
+            <p>Você resolve pegar a chave com cuidado para não chamar a atenção da mulher, e tenta destrancar algumas portas que estão ali por perto em busca da saída. Com muita sorte a primeira porta que você tenta destrancar é a saída.</p>
+            <button class="btn-proximo" data-proximo="12">Sair da casa.</button>
+        </div>
+        <div class="passo" id="passo-12">
+            <img src="final bom6.png" alt="">
+            <p>Com um enorme alívio você corre para fora e volta para sua casa. Em sua residência você decide ligar para a polícia e relatar sobre o que aconteceu, porém os políciais não acreditam e acham que é apenas um trote. Então, irritado e um pouco frustado você decide ir dormir, mas você logo em seguida acaba acordando e descobre que tudo não se passou apenas de um pesadelo.</p>
+        </div>
+        <div class="passo" id="passo-13">
+            <img src="HOSPITAL.png" alt="">
+            <p> </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
